@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAA SENA</title>
+    <script src="https://kit.fontawesome.com/c3860b92ff.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/logo_sena.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <script>
+        setInterval("location.reload()",3000);
+    </script>
+    <!-- titulo del index -->
+    <div id="title">
+        <p>Sistema De Asignación De Ambientes</p>
+        <img src="img/logo_title.png" alt="">
+    </div>
+
+    <!-- división del cuerpo para la modificiación correcta -->
+    <div id="cuerpo">
+        <!-- parte izquierda de main -->
+        <aside>
+            <ul>
+                <!-- parte del perfíl con nombre y rol de la página -->
+                <a id="photo_perfil" href="#">
+
+                    <img src="img/photo.jpg" alt="">
+                    <p>Boris</p>
+                    <p>admin</p>
+
+                </a>
+
+                <a class="elec" href="#">
+                    <li>Inicio <i class="fa-solid fa-house-chimney"></i></li>
+                </a>
+
+
+                <a class="elec" href="#" onclick="">
+                    <li>Notificación <i class="fa-solid fa-envelope"></i></li>
+                </a>
+
+
+                <a class="elec" href="#">
+                    <li>Configuración</li>
+                </a>
+            </ul>
+        </aside>
+        <hr>
+        <main>
+            <!-- secciones para los ambientes -->
+            <a href="index3.html">
+                <div class="container">
+                    <h3>PISO 3</h3>
+                    <p>10 ambientes</p>
+                    <p>2 ambientes especiales</p>
+                </div>
+            </a>
+            <a href="index3.html">
+                <div class="container">
+                    <h3>PISO 2</h3>
+                    <p>10 ambientes</p>
+                    <p>2 ambientes especiales</p>
+                </div>
+            </a>
+            <a href="index3.html">
+                <div class="container">
+                    <h3>PISO 1</h3>
+                    <p>10 ambientes</p>
+                    <p>2 ambientes especiales</p>
+                </div>
+            </a>
+        </main>
+    </div>
+
+    <script>
+        /* Cuando el usuario hace clic en el botón,
+        alternar entre ocultar y mostrar el contenido desplegable */
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(e) {
+          if (!e.target.matches('.dropbtn')) {
+          var myDropdown = document.getElementById("myDropdown");
+            if (myDropdown.classList.contains('show')) {
+              myDropdown.classList.remove('show');
+            }
+          }
+        }
+        </script>
+</body>
+
+</html>
+
+<!-- 
+    Recargar pagina en php
+    <?php
+    header("Refresh:1");
+    echo date('H:i:s Y-m-d');
+    ?> -->

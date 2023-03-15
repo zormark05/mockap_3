@@ -1,0 +1,231 @@
+/* 
+colores del maquetado 
+
+#425F57 verde oscuro
+#749F82 verde claro 
+#A8E890 VERDE LIMÓN
+#CFFF8D AMARILLO VERDOSO 
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* modifica el cuerpo del index */
+body{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    
+}
+
+/* modifica el titulo */
+
+#title{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 25px;
+    font-size: 40px;
+   
+    
+}
+
+#title img{
+
+    width: 100px;
+    height: 100px;
+}
+
+/* modifica el contenedir de la foto de perfil  */
+#photo_perfil{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    
+    width: 150px;
+    height: 150px;
+
+}
+#photo_perfil img {
+   
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+/* modifica las partes del contendedor que lleva aside y main */
+
+#cuerpo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 1000px;
+    height: 600px;
+    gap: 25px;
+    justify-content: space-around;
+   
+}
+
+
+/* modifica el aside del cuerpo */
+aside{
+    display: flex ;
+    flex-direction: column;
+    
+    align-items: center;
+    width: 300px;
+    height: 550px;
+  
+    border-radius: 5px;
+}
+
+aside ul {
+    display: flex;
+    flex-direction: column;
+    height: 450px;
+    width: 200px;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+aside ul a{
+    text-decoration: none;
+    color: black;
+}
+
+.elec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    height: 50px;
+    width: 200px;
+}
+.elec:hover{
+    background-color: #749F82;
+}
+
+aside a li{
+    list-style: none;
+}
+
+/* modifica la linea que esta en el centro  */
+hr{
+    height: 500px;
+    
+    background-color: black;
+}
+
+/* modifica el el main */
+main{
+    display: flex;
+    flex-direction: column;
+   
+    gap: 25px;
+   
+    
+}
+
+
+main a{
+    color: black;
+    text-decoration: none;
+}
+
+/* modifica cada uno de los contendores de manera general  */
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 850px;
+    height: 150px;
+    background-color: #425F57 ;
+    border-radius: 25px;
+}
+
+.container:hover{
+    background-color: #749F82;
+
+}
+
+
+/* estilos para el desplegable  */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+    background-color: red;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .show {
+    display: block;
+  }
+  
